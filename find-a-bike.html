@@ -44,17 +44,28 @@
     </section>
 
     <section class="row">
-      <div class="col-12 col-md-12 col-lg-12">
-        <form class="text-center">
-          <label class="display-4" for="step1">Step 1: Walk to a bike on the map and enter the code</label><br>
-          <input type="text" id="step1" name="step1"><br>
-          <label class="display-4" for="step2">Step 2: Enter your destination</label><br>
-          <label class="display-6" for="step2"> From:</label>
-          <input type="text" id="step2" name = step2><br>
-          <label class="display-6" for="step2"> To:</label>
-          <input type="text" id="step2" name = step2><br>
-          <label class="display-4" for="step3">Step 3: Choose payment option</label>
+      <div class="col-display-none col-md-4 col-lg-4">
+
+      </div>
+      <div class="col-12 col-md-4 col-lg-4">
+        <form>
+          <div class="mb-3">
+            <label for="step1" class="form-label">Enter the unique code found on the bike</label>
+            <input type="text" class="form-control" id="step1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Example: aa12bb34</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+      </div>
+      <div class="col-display-none col-md-4 col-lg-4">
 
       </div>
     </section>
