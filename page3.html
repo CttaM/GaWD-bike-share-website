@@ -11,7 +11,7 @@
     
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Wheelie</a>
+              <a class="navbar-brand" href="index.html">Wheelie</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -21,7 +21,7 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Find a bike</a>
+                    <a class="nav-link" href="find-a-bike.html">Find a bike</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">How to ride</a>
@@ -37,24 +37,42 @@
     <main class="container-fluid">
 
     <section class="row">
-    <div class="header-pic-container">
-    <img id="header-pic" src="images/map.jpg" alt="image of map">
-    
-    </div>
-    </section>
-
-    <section class="row">
       <div class="col-12 col-md-12 col-lg-12">
-        <form class="text-center">
-          <label class="display-4" for="step1">Step 1: Walk to a bike on the map and enter code</label><br>
-          <input type="text" id="step1" name="step1"><br>
-          <label class="display-4" for="step2">Step 2: Enter your destination</label><br>
-          <label class="display-6" for="step2"> From:</label>
-          <input type="text" id="step2" name = step2><br>
-          <label class="display-6" for="step2"> To:</label>
-          <input type="text" id="step2" name = step2><br>
-          <button type="button" class="centered btn btn-light"><a href="">Next</a></button>
+        <form>
+            <label class="display-4" for="step3">How would you wish to pay?</label><br>
+            <div class="p-2">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+              <option selected>Use existing card</option>
+              <option value="1">Add new card</option>
+            </select>
+            </div>
+            <div class="mb-3">
+              <label for="step3b" class="form-label display-6">Add new card details</label><br>
+              <label for="step3b" class="form-label"><b>Card number</b></label><br>
+              <input type="text" class="form-control" id="step3b" aria-describedby="emailHelp"><br>
+              <label for="step3b" class="form-label"><b>Expiry date</b></label><br>
+              <input type="month" class="form-control"><br>
+              <label for="step3b" class="form-label"><b>Name on card</b></label><br>
+              <input type="text" class="form-control" id="step3b" aria-describedby="emailHelp"><br>
+              <label for="step3b" class="form-label"><b>Security code</b></label><br>
+              <input type="number" class="form-control" id="step3b" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Three digit code on back of card</div>
+            </div>
         </form>
+
+        <section class="row">
+          <div class="col-6 col-md-6 col-lg-6">
+              <div class="p-2 text-center">
+                <button type="button" class="btn btn-danger"><a class="text-white " href="find-a-bike.html">Back</a></button>
+              </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-6">
+              <div class="p-2 text-center">
+                <button type="button" class="btn btn-success"><a class="text-white " href="page3.html">Next</a></button>
+              </div>
+          </div>
+          </section>
+        </section>    
 
       </div>
     </section>
